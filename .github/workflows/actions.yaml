@@ -1,8 +1,11 @@
-Name: Build
+name: Build
 
 on:
   push:
-    branches: "**"
+    branches:
+      - main
+      - ci/cd
   pull_request:
-    branches: [ main ]
-
+    branches:
+      - main
+      - ci/cd
